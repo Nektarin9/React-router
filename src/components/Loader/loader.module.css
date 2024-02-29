@@ -1,0 +1,47 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.conteiner_loader {
+	display: block;
+	text-align: center;
+}
+
+.loader {
+	width: 60px;
+	height: 60px;
+	border: 5px solid #fff;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.pError {
+	color: red;
+	font-size: 40px;
+}
+.pBack {
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	transform: 0.3s;
+	transition: 0.3s;
+}
+
+.pBack:hover {
+	transform: 0.3s;
+	transition: 0.3s;
+	color: rgb(134, 215, 34);
+	font-size: 40px;
+}

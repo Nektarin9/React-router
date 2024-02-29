@@ -2,16 +2,13 @@ import React from 'react';
 import { useState, useRef } from 'react';
 
 import style from './HomePage.module.css';
-import { UseAddTasks } from '../../hooks/UseBtnAddTask.js';
-import { ShowTasks } from '../ShowTasks/ShowTasks.js';
-export function HomePage({
-	tasks,
-	refreshTasks,
-	setRefreshTasks,
-}) {
+import { UseAddTasks } from '../../hooks/hooks.js';
+import { ShowTasks } from '../index';
+export function HomePage({ tasks, refreshTasks, setRefreshTasks }) {
 	const [filter, setFilter] = useState('');
 	const [newTask, setNewTask] = useState('');
 	const [stateBtnSort, setStateBtnSort] = useState(false);
+
 	const inputRef = useRef(null);
 	const { btnAddTasks, errorNewTask } = UseAddTasks(
 		refreshTasks,

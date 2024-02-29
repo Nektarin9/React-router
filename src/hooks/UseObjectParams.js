@@ -7,6 +7,7 @@ export function UseObjectParams(tasks) {
 	tasks.forEach((element) => {
 		if (element.id === params) {
 			objParams = element;
+		} else {
 		}
 	});
 	return objParams;

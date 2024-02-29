@@ -5,7 +5,6 @@ export function UseBtnChangeTask(
 	inputChangeValue,
 	taskСompleted,
 ) {
-	console.log(id)
 	fetch(`http://localhost:3005/tasks/${id}`, {
 		method: 'PUT',
 		headers: { 'Content-Type': 'application/json;charset=utf-8' },
